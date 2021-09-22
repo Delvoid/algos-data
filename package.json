@@ -1,0 +1,18 @@
+{
+  "name": "algos",
+  "version": "1.0.0",
+  "description": "Algorithms and Data Structures",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "keywords": [
+    "testing",
+    "algorithms",
+    "data",
+    "structures",
+    "javascript"
+  ],
+  "author": "Dave Hough",
+  "license": "ISC"
+}
