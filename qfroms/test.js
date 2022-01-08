@@ -1,6 +1,6 @@
 const Queue = require('./index')
 
-describe('Queues', () => {
+describe('Two become one, queues', () => {
   test('Queue is a class', () => {
     expect(typeof Queue.prototype.constructor).toEqual('function')
   })
@@ -29,5 +29,15 @@ describe('Queues', () => {
     expect(q.remove()).toEqual(2)
     expect(q.remove()).toEqual(3)
     expect(q.remove()).toEqual(undefined)
+  })
+
+  test('peek returns, but does not remove, the first value', () => {
+    const q = new Queue()
+    q.add(1)
+    q.add(2)
+    expect(q.peek()).toEqual(1)
+    expect(q.peek()).toEqual(1)
+    expect(q.remove()).toEqual(1)
+    expect(q.remove()).toEqual(2)
   })
 })
